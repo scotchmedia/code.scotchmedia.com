@@ -1,5 +1,5 @@
-application: sm-code
-version: 1
+application: scotch-media
+version: code
 runtime: python27
 api_version: 1
 threadsafe: yes
@@ -8,7 +8,6 @@ default_expiration: "1m"
 
 builtins:
 - appstats: off
-- datastore_admin: off
 - remote_api: off
 - deferred: off
 
@@ -17,7 +16,7 @@ handlers:
   static_files: favicon.ico
   upload: favicon\.ico
 
-- url: /engineauth/
+- url: /engineauth/docs/
   static_dir: engineauth
 
 - url: /.*
